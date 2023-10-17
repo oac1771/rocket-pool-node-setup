@@ -30,3 +30,24 @@ Setup Tailscale Virtual Network. Follow [these steps](https://docs.rocketpool.ne
 Follow [these steps](https://docs.rocketpool.net/guides/node/securing-your-node.html#essential-enable-automatic-security-updates) in rocketpool docs. Make sure to use ip address setup by Tailscale instead local node network IP address
 
 Note: we did not setup Two-Factor Authentication 
+
+
+## Rocket Pool Installation
+Follow [these steps](https://github.com/rocket-pool/smartnode-install) to install rocket pool cli
+
+Needed to use these commands:
+```sudo curl -L https://github.com/rocket-pool/smartnode-install/releases/latest/download/rocketpool-cli-linux-amd64 --create-dirs -o /usr/local/bin/rocketpool && sudo chmod +x /usr/local/bin/rocketpool```
+
+Choosing Lighthouse for Consensus layer and Buse for Execution Layer.
+
+## Rocket Pool Configuration
+network: holesky
+client mode: locally managed
+execution client setup: besu
+consensus client setup: lighthouse
+lighthouse grafiti: Anyting4TheMigas
+
+enable checkpoint sync holesky: `https://holesky.beaconstate.ethstaker.cc/`
+doppelganger: enabled
+metrics: enabled
+mev: is disabled on testnet 
