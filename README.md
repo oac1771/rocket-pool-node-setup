@@ -36,14 +36,16 @@ Note: we did not setup Two-Factor Authentication
 Follow [these steps](https://github.com/rocket-pool/smartnode-install) to install rocket pool cli
 
 Needed to use these commands:
-```sudo curl -L https://github.com/rocket-pool/smartnode-install/releases/latest/download/rocketpool-cli-linux-amd64 --create-dirs -o /usr/local/bin/rocketpool && sudo chmod +x /usr/local/bin/rocketpool```
-
-Choosing Lighthouse for Consensus layer and Buse for Execution Layer.
+```shell
+sudo curl -L https://github.com/rocket-pool/smartnode-install/releases/latest/download/rocketpool-cli-linux-amd64 --create-dirs -o /usr/local/bin/rocketpool && sudo chmod +x /usr/local/bin/rocketpool
+```
 
 ## Rocket Pool Configuration
-
 ### Holesky Testnet
 
+Used Wizard to configure. Chose Lighthouse for Consensus layer and Buse for Execution Layer.
+
+```shell
 network: holesky
 client mode: locally managed
 execution client setup: besu
@@ -53,4 +55,5 @@ lighthouse grafiti: Anyting4TheMigas
 enable checkpoint sync holesky: `https://holesky.beaconstate.ethstaker.cc/`
 doppelganger: enabled
 metrics: enabled
-mev: is disabled on testnet 
+mev: is disabled on testnet
+```
