@@ -41,6 +41,9 @@ Needed to use these commands:
 Choosing Lighthouse for Consensus layer and Buse for Execution Layer.
 
 ## Rocket Pool Configuration
+
+### Holesky Testnet
+
 network: holesky
 client mode: locally managed
 execution client setup: besu
