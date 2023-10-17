@@ -30,3 +30,6 @@ Setup Tailscale Virtual Network. Follow [these steps](https://docs.rocketpool.ne
 Follow [these steps](https://docs.rocketpool.net/guides/node/securing-your-node.html#essential-enable-automatic-security-updates) in rocketpool docs. Make sure to use ip address setup by Tailscale instead local node network IP address
 
 Note: we did not setup Two-Factor Authentication 
+
+
+path for config: ~/.rocketpool/user-settings.yml
