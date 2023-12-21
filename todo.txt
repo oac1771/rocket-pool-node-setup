@@ -1,0 +1,10 @@
+todo:
+    - update tailscale
+        - look into firewall rules
+    - update rocketpool software
+    - update os dependencies
+    - check swapiness 
+    - taxes
+    - test nosys wallet transaciton thing 
+    - setup alerting with grafana
+        - look into saving container logs on grafana 
