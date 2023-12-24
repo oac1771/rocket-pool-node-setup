@@ -57,3 +57,16 @@ doppelganger: enabled
 metrics: enabled
 mev: is disabled on testnet
 ```
+
+## Swapiness
+
+Default value is set to 60 before we added the following line in `/etc/sysctl.conf` .This sets swapiness to 20 across reboots:
+
+```
+vm.swappiness=20
+```
+
+To check current swapiness level:
+```
+sudo sysctl -p
+```

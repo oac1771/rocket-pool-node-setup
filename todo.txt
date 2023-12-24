@@ -1,10 +1,11 @@
 todo:
     - update tailscale
         - look into firewall rules
-    - update rocketpool software
-    - update os dependencies
-    - check swapiness 
+            - https://tailscale.com/kb/1077/secure-server-ubuntu-18-04#step-6-restrict-all-other-traffic
+            - test turning tailscale off and seeing if we lose peers
     - taxes
-    - test nosys wallet transaciton thing 
+    - test gnosis wallet transaciton thing 
     - setup alerting with grafana
         - look into saving container logs on grafana 
+
+learn more about docker compose networks
