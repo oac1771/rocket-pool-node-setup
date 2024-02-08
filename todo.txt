@@ -1,12 +1,15 @@
 todo (in order):
-    - use new client for eth1 (fuck besu)
+    - eve updates
+    - rp updates
     - setup alerting with grafana
         - look into saving container logs on grafana 
+        - alert for no peers
     - update tailscale
         - look into firewall rules
             - https://tailscale.com/kb/1077/secure-server-ubuntu-18-04#step-6-restrict-all-other-traffic
             - test turning tailscale off and seeing if we lose peers
     - taxes
     - test gnosis wallet transaciton thing 
+    - use new client for eth1 (fuck besu)
 
 learn more about docker compose networks
