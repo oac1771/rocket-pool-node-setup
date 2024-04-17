@@ -63,10 +63,13 @@ mev: is disabled on testnet
 Default value is set to 60 before we added the following line in `/etc/sysctl.conf` .This sets swapiness to 20 across reboots:
 
 ```
-vm.swappiness=20
+vm.swappiness=6
+vm.vfs_cache_pressure=10
 ```
 
 To check current swapiness level:
 ```
 sudo sysctl -p
 ```
+
+Don't need to reboot after updating swapspace.
