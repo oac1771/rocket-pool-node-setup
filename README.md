@@ -73,3 +73,18 @@ sudo sysctl -p
 ```
 
 Don't need to reboot after updating swapspace.
+
+## Pruning
+
+Commands to see storage usage:
+```
+docker exec -it rocketpool_eth1 du -hs /ethclient
+```
+```
+docker exec -it rocketpool_eth2 du -hs /ethclient
+```
+
+Prune eth_1 (nethermind)
+```
+rocketpool service prune-eth1
+```
